@@ -1,0 +1,51 @@
+@model CommunityEvent
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="container p-3">
+    <h2>Community Events</h2>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 col-md-4 col-sm-12 mb-4">
+            <div class="card-events p-2 text-center border border-3 border-black">
+                <img src="~/image/Farmers-Market.png" class="card-image card-img-top img-fluid " alt="Farmers Market">
+                <div class="card-body">
+                    <h5 class="card-title">Farmers Market</h5>
+                    <p class="event-details">5 concerts </p>
+                    <p class="text-muted">90 Followers</p>
+                    <a href="#" class="card-btn btn btn-primary border border-3 border-black">More infos</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 2-->
+        <div class="col-lg-4 col-md-6 col-md-4 col-sm-12 mb-4">
+            <div class="card-events p-2 text-center border border-3 border-black">
+                <img src="~/image/Green-Earth.png" class="card-image card-img-top img-fluid" alt="56 OR Tambo">
+                <div class="card-body">
+                    <h5 class="card-title">56 OR Tambo</h5>
+                    <p class="event-details">1 festival </p>
+                    <p class="text-muted">26 Followers</p>
+                    <a href="#" class="card-btn btn btn-primary border border-3 border-black">More infos</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3-->
+        <div class="col-lg-4 col-md-6 col-md-4 col-sm-12 mb-4">
+            <div class="card-events p-2 text-center border border-3 border-black">
+                <img src="~/image/Music-Festival.png" class="card-image card-img-top img-fluid" alt="Music Festival">
+                <div class="card-body">
+                    <h5 class="card-title">LemoFest</h5>
+                    <p class="event-details">10 Concerts </p>
+                    <p class="text-muted">1000 Followers</p>
+                    <a href="#" class="card-btn btn btn-primary border border-3 border-black">More infos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+</div>

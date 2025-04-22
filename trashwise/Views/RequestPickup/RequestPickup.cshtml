@@ -1,0 +1,31 @@
+@model RequestPickup
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="p-3">
+    <h2>Request Pick up</h2>
+    <form asp-action="RequestPickup" method="post">
+        <label>Full Name </label>
+        <input asp-for="FullName" class="form-control" required="" />
+        <label>Address</label>
+        <input asp-for="Address" class="form-control" required />
+
+        <label>Phone Number</label>
+        <input asp-for="PhoneNumber" class="form-control" required />
+
+        <label>Type of Waste</label>
+        <select asp-for="WasteCategory" asp-items="Html.GetEnumSelectList<WasteType>()" class="form-control" required></select>
+
+        <label>Preferred Pickup Date</label>
+        <input asp-for="PreferredPickupDate" type="datetime-local" class="form-control" required />
+
+        <label>Additional Notes</label>
+        <textarea asp-for="AdditionalNotes" class="form-control"></textarea>
+
+        <button type="submit" class="btn btn-success mt-3">Submit Request</button>
+
+    </form>
+</div>
