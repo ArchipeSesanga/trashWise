@@ -32,7 +32,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .main-container > div.content {
     grid-area: content!important;
-    padding: 0px!important;
+    padding: 0 !important;
 }
 
 .main-container > div.footer {
@@ -41,10 +41,18 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .logo {
     width: 150px!important;
+   
+}
+.profile-pic {
+   /*It using a default style*/
 }
 
 .logo-text {
     text-transform: uppercase!important;
+}
+
+.setting-container{
+    background-color: rgb(209,178,89);
 }
 
 /*****************************************/
